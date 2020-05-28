@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{%load static%}
+
+{% block body %}
+
+<center><h4> {{data.name}} </h4></center>
+<hr>
+
+<video name='demo' controls autoplay width='100%' height='40%'>
+<source src="/{{data.url}}" type="video/mp4"></source>
+</video>
+
+{% endblock body %}
+
+
+
